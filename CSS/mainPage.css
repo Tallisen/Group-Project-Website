@@ -1,0 +1,197 @@
+
+
+#header .text{
+    position:static;
+    text-align: center;
+    right: 50px;
+    top:0px;
+    padding: 5px;
+    color: white;
+    overflow: hidden;
+}
+
+.notecontainer{
+  height:100%;
+  min-height: 400px;
+}
+
+#enterbtn{
+  position:absolute;
+  text-align: center;
+  width:100%;
+  margin-top: 400px;
+  color: white;
+  overflow: hidden;
+  z-index: 1;
+}
+.notecontainer img {
+    filter: drop-shadow(1px 1px 1px #fff);
+}
+.notecontainer .clef img {
+    filter: drop-shadow(2px 2px 2px #fff);
+}
+ .clef{
+  display:flex;
+  justify-content: center;
+  height: 180px;
+  width: 180px;
+  background-size: cover;
+  position: absolute;
+  left:50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.note1-outline, .note2-outline, .note3-outline, .note4-outline, .note5-outline, .note6-outline, .note7-outline{
+  border-radius: 50%;
+  border:none;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.note1{
+  display:flex;
+  justify-content: center;
+  height: 60px;
+  width:60px;
+  background-size: cover;
+  position: absolute;
+  left:36%;
+  top: 30%;
+  transform: translate(-50%,-50%);
+  animation:orbit3 15s linear infinite;
+}
+.note1-outline{
+  height:200px;
+  width:200px;
+}
+@keyframes orbit3{
+  from{transform:rotate(0deg)translatex(-100px) rotate(0deg);}
+  to{transform:rotate(360deg)translatex(-100px) rotate(-360deg);}
+}
+
+.note2{
+  display:flex;
+  justify-content: center;
+  height: 70px;
+  width:70px;
+  background-size: 100%;
+  position: absolute;
+  left:40%;
+  top: 40%;
+  transform: translate(-50%,-50%);
+  animation:orbit4 20s linear infinite;
+}
+.note2-outline{
+  height:300px;
+  width:300px;
+}
+@keyframes orbit4{
+  from{transform:rotate(0deg)translatex(150px) rotate(0deg);}
+  to{transform:rotate(360deg)translatex(150px) rotate(-360deg);}
+}
+
+.note3{
+  display:flex;
+  justify-content: center;
+  height: 30px;
+  width:30px;
+  background-size: 100%;
+  position: absolute;
+  left:46.5%;
+  top: 46.5%;
+  transform: translate(-50%,-50%);
+  animation:orbit6 30s linear infinite;
+}
+.note3-outline{
+  height:370px;
+  width:370px;
+}
+@keyframes orbit6{
+  from{transform:rotate(0deg)translatey(185px) rotate(0deg);}
+  to{transform:rotate(360deg)translatey(185px) rotate(-360deg);}
+}
+
+.note4{
+  display:flex;
+  justify-content: center;
+  height: 80px;
+  width:80px;
+  background-size: 100%;
+  position: absolute;
+  left:40%;
+  top: 40%;
+  transform: translate(-50%,-50%);
+  animation:orbit7 60s linear infinite;
+}
+.note4-outline{
+  height:430px;
+  width:430px;
+}
+@keyframes orbit7{
+  from{transform:rotate(0deg)translatex(-217px) rotate(0deg);}
+  to{transform:rotate(360deg)translatex(-217px) rotate(-360deg);}
+}
+
+.note5{
+  display:flex;
+  justify-content: center;
+  height: 100px;
+  width:100px;
+  background-size: 100%;
+  position: absolute;
+  left:40%;
+  top: 40%;
+  transform: translate(-50%,-50%);
+  animation:orbit8 70s linear infinite;
+}
+.note5-outline{
+  height:500px;
+  width:500px;
+}
+@keyframes orbit8{
+  from{transform:rotate(0deg)translatey(-250px) rotate(0deg);}
+  to{transform:rotate(360deg)translatey(-250px) rotate(-360deg);}
+}
+
+.note6{
+  display:flex;
+  justify-content: center;
+  height: 70px;
+  width:70px;
+  background-size: 100%;
+  position: absolute;
+  left:44%;
+  top: 44%;
+  transform: translate(-50%,-50%);
+  animation:orbit9 100s linear infinite;
+}
+.note6-outline{
+  height:560px;
+  width:560px;
+}
+@keyframes orbit9{
+  from{transform:rotate(0deg)translatex(280px) rotate(0deg);}
+  to{transform:rotate(360deg)translatex(280px) rotate(-360deg);}
+}
+
+.note7{
+  display:flex;
+  justify-content: center;
+  height: 50px;
+  width:50px;
+  background-size: 100%;
+  position: absolute;
+  left:46%;
+  top: 46%;
+  transform: translate(-50%,-50%);
+  animation:orbit10 200s linear infinite;
+}
+.note7-outline{
+  height:620px;
+  width:620px;
+}
+@keyframes orbit10{
+  from{transform:rotate(0deg)translatey(310px) rotate(0deg);}
+  to{transform:rotate(360deg)translatey(310px) rotate(-360deg);}
+}

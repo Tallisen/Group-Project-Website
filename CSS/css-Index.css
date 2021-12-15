@@ -1,0 +1,196 @@
+body, html {
+  display:flex;
+  flex-direction:column;
+  background:linear-gradient(to top, #CBD1DF 0%, #CBD1DF 70%);
+  background-repeat: repeat;
+  background-position: bottom center;
+  background-size:contain;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100%;
+  margin:0px;
+  padding: 0;
+}
+
+.maincontainer{
+  height:100%;
+  min-height: 1050px;
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/trees.jpg);
+  background-position: top center;
+  background-repeat: no-repeat
+}
+
+.pagecontentcontainer{
+  margin-top:0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 200px;
+}
+
+#about-contact{
+  display: static;
+  overflow: hidden;
+}
+
+#home{
+  background-size: cover;
+  width:100%;
+  min-height: 800px;
+  overflow:hidden;
+}
+#home h1{
+  position:static;
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+}
+#home pre {
+  line-height: 1.7;
+  color: white;
+  text-shadow: 0.5px 0.5px black;
+  font-size: 20px;
+}
+#home p {
+  line-height: 1.7;
+  color: white;
+  text-shadow: 0.5px 0.5px black;
+  font-size: 20px;
+}
+
+#divhome1{
+  float:left;
+  background:linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+  width:40%;
+  height:400px;
+    margin-top:100px;
+  overflow:hidden;
+}
+#divhome2{
+  float:right;
+  background:linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+  width:40%;
+  height:400px;
+  margin-top:100px;
+  overflow:hidden;
+}
+#divhome3{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  height:400px;
+  margin-top: 100px;
+}
+
+#header .text{
+    position:static;
+    text-align: center;
+    right: 50px;
+    top:0px;
+    padding: 5px;
+    padding-top: 82px;
+    color: white;
+}
+
+/* Navigation bar start*/
+#navbar{
+  overflow: hidden;
+  justify-content: center;
+  width:100%;
+  top:0px;
+  z-index:2;
+}
+
+#navbar .socialmediaicons {
+  float:right;
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+#navbar ul{
+  list-style-type: none;
+  padding:0;
+  overflow: hidden;
+  background: rgba(255,255,255,0);
+}
+
+#navbar li a{
+  float:left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navbar li a:hover {
+  border-bottom: 2px solid;
+  border-color: white;
+  top: 50%;
+  bottom: 0;
+}
+
+#navstop{
+  margin-bottom: 30px;
+}
+/* Navigation bar End*/
+
+
+.bn1{
+  display: inline-block;
+  padding: 0.5em 1.7em;
+  margin: 0 0.1em 0.1em 0;
+  border: 0.16em solid rgb(255, 255, 255);
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.bn1:hover {
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Footer start*/
+  #footer{
+    position:flex;
+    bottom:0;
+    margin-top: 400px;
+    width:100%;
+    line-height: 1.7;
+    color: white;  /* Change color off footer text(not links)*/
+    font-family: Arial, Helvetica, sans-serif;
+    background:linear-gradient(to top, #65686f 0%, #65686f 10%);
+  }
+  #footer a{
+    color: white;  /* Change color off footer links*/
+    text-decoration-line: underline;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #footer ul{
+    list-style-type: none;
+  }
+  #footer .about {
+    display: block;
+    float:left;
+    margin-left: 50px;
+  }
+  #footer .socialmedia {
+    display: block;
+    float:left;
+    margin-left: 50px;
+  }
+  #footer .contact {
+    display: block;
+    float:left;
+    margin-left: 50px;
+  }
+/* Footer End*/

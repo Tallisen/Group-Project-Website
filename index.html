@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Sampling</title>
+      <link rel="shortcut icon" type="image/png" href="img/MountainFavicon.png"/>
+      <link href="css/css-Index.css" rel="stylesheet">
+      <link rel="stylesheet" href="CSS/css-samples.css">
+      <link rel="stylesheet" href="CSS/mainPage.css">
+      <link rel="stylesheet" href="CSS/about.css">
+  </head>
+    <body>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <div class="maincontainer">
+
+        <div id="navbar">
+          <ul>
+            <li><a id="toHome" href="javascript:HideContent(['samples','about-contact','notecontainer'])" onclick="showHome(), hideEnterSite()">Home</a></li>
+            <li><a id="toSamplePage" href="javascript:HideContent(['home','about-contact','notecontainer'])" onclick="showSmplPage(), hideEnterSite()">Sample Packs</a></li>
+            <li><a id="toAbout-contact" href="javascript:HideContent(['home','samples','notecontainer'])" onclick="showAbout(), hideEnterSite()">About & Contact</a></li>
+            <li class="socialmediaicons"><a href="https://www.link.com"><img src="img/twitch-tv-16.png" width="16px" height="16px"/></a></li>
+            <li class="socialmediaicons"><a href="https://www.link.com"><img src="img/instagram-16.png" width="16px" height="16px"/></a></li>
+            <li class="socialmediaicons"><a href="https://www.link.com"><img src="img/facebook-16.png" width="16px" height="16px"/></a></li>
+            <li class="socialmediaicons"><a href="https://www.link.com"><img src="img/twitter-16.png" width="16px" height="16px"/></a></li>
+          </ul>
+        </div>
+
+         <div id="header">
+          <div class="text">
+           <h1 style="font-size:50px">QUALITY<br>SAMPLES</h1>
+          </div>
+          <div id="enterbtn"><a href="javascript:HideContent(['samples','about-contact','notecontainer'])" class="bn1" onclick="showHome(), hideEnterSite()">Enter Site</a></div>
+        </div>
+        <div id="notecontainer" class="notecontainer">
+          <div class="clef"><img src="img/clef.png" style="height: 100%;"></div>
+          <div class="note1-outline">
+              <div class="note1"><img src="img/note0.png" style="height: 100%;"></div>
+          </div>
+          <div class="note2-outline">
+            <div class="note2"><img src="img/note5.png" style="height: 100%;"></div>
+          </div>
+          <div class="note3-outline">
+              <div class="note3"><img src="img/note2.png" style="height: 100%;"></div>
+          </div>
+          <div class="note4-outline">
+              <div class="note4"><img src="img/note1.png" style="height: 100%;"></div>
+          </div>
+          <div class="note5-outline">
+              <div class="note5"><img src="img/note0.png" style="height: 100%;"></div>
+          </div>
+          <div class="note6-outline">
+              <div class="note6"><img src="img/note4.png" style="height: 100%;"></div>
+          </div>
+          <div class="note7-outline">
+              <div class="note7"><img src="img/note1.png" style="height: 100%;"></div>
+          </div>
+        </div>
+         <!--put all page content in the div beneath-->
+         <div id="navstop"></div>
+
+        <div id="pagecont" class="pagecontentcontainer">
+
+          <div id="home" class="hidden home-page">
+            <div id="divhome3"><iframe width="640" height="430" src="https://www.youtube.com/embed/Cs_RZIPRJEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div id="divhome1"><h1>News<h1><p>
+            Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut laboreet dolore magna aliqua.Ut enim ad minim veniam, quis
+            nostrud exercitation ullamcolaboris nisi ut aliquip ex eacommodo consequat.<br>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
+            </div>
+            <div id="divhome2"><h1>Tour Dates<h1><pre>01.02.22                      Bergen<br>29.02.22                   Stavanger<br>08.03.22                   Trondheim<br>20.03.22                        Oslo<br>03.04.22                        Bodø<pre></div>
+>
+          </div>
+
+          <div id="samples" class="sample-page hidden">
+          <div id="form-container" class="form">
+            <div id="ulBtn"><a class="bn1"  onclick="hideContent(), hideBtn(), showSubmitBtn()">SUBMIT SAMPLE</a></div>
+
+              <form runat="Server" id="form" class="fields hide">
+                <input id="field1" type='text' class="bn1" placeholder="Sample Name...">
+                <br>
+                <br>
+                <label for="field2" class="bn1">UPLOAD COVER ART</label>
+
+                <input id="field2" type='file' accept="image/*" class="profile-img input-style" style="visibility:hidden;" placeholder="" onchange="loadImg(event)">
+
+                <img id="previewImg" src="" alt="your image">
+
+                <label for="field3" class="bn1">UPLOAD SAMPLE</label>
+
+                <input id="field3" type='file' accept="audio/*" class="profile-aud input-style" style="visibility:hidden;" placeholder="" onchange="loadAud(event)">
+                <audio controls id="previewAud" src="">
+                  Your browser does not support the <code>audio</code> element.
+                </audio>
+                <button type="submit" class="btn hide2" id="btn" onclick="showBtn(), hideSubmitBtn()"><img src="img/Upload.png" alt="" style="width: 50px; mix-blend-mode: multiply;"></button>
+              </form>
+
+
+          <br>
+          <br>
+          <div id="audio-container" class="sample-grid">
+            <div class="sample-container">
+              <div id="image" class="cover">
+                <img src="../img/D1.png" class="coverimg">
+                <h2><span>.....</span></h2>
+              </div>
+                <figure>
+                  <audio class="aud"
+                      controls
+                      src="../media/Epic beat.mp3">
+                          Your browser does not support the
+                          <code>audio</code> element.
+                  </audio>
+                </figure>
+            </div>
+
+            <div class="sample-container">
+              <div id="image" class="cover">
+                <img src="../img/D1.png" class="coverimg">
+                <h2><span>.....</span></h2>
+              </div>
+                <figure>
+                  <audio class="aud"
+                      controls
+                      src="../media/Epic beat.mp3">
+                          Your browser does not support the
+                          <code>audio</code> element.
+                  </audio>
+                </figure>
+            </div>
+
+            <div class="sample-container">
+              <div id="image" class="cover">
+                <img src="../img/D1.png" class="coverimg">
+                <h2><span>.....</span></h2>
+              </div>
+                <figure>
+                  <audio class="aud"
+                      controls
+                      src="../media/Epic beat.mp3">
+                          Your browser does not support the
+                          <code>audio</code> element.
+                  </audio>
+                </figure>
+            </div>
+
+            <div class="sample-container">
+              <div id="image" class="cover">
+                <img src="../img/D1.png" class="coverimg">
+                <h2><span>.....</span></h2>
+              </div>
+                <figure>
+                  <audio class="aud"
+                      controls
+                      src="../media/Epic beat.mp3">
+                          Your browser does not support the
+                          <code>audio</code> element.
+                  </audio>
+                </figure>
+            </div>
+
+            <div class="sample-container">
+              <div id="image" class="cover">
+                <img src="../img/D1.png" class="coverimg">
+                <h2><span>.....</span></h2>
+              </div>
+                <figure>
+                  <audio class="aud"
+                      controls
+                      src="../media/Epic beat.mp3">
+                          Your browser does not support the
+                          <code>audio</code> element.
+                  </audio>
+                </figure>
+            </div>
+
+            <div class="sample-container">
+              <div id="image" class="cover">
+                <img src="../img/D1.png" class="coverimg">
+                <h2><span>.....</span></h2>
+              </div>
+                <figure>
+                  <audio class="aud"
+                      controls
+                      src="../media/Epic beat.mp3">
+                          Your browser does not support the
+                          <code>audio</code> element.
+                  </audio>
+                </figure>
+            </div>
+
+            <div class="sample-container">
+              <div id="image" class="cover">
+                <img src="../img/D1.png" class="coverimg">
+                <h2><span>.....</span></h2>
+              </div>
+                <figure>
+                  <audio class="aud"
+                      controls
+                      src="../media/Epic beat.mp3">
+                          Your browser does not support the
+                          <code>audio</code> element.
+                  </audio>
+                </figure>
+            </div>
+
+            <div class="sample-container">
+              <div id="image" class="cover">
+                <img src="../img/D1.png" class="coverimg">
+                <h2><span>.....</span></h2>
+              </div>
+                <figure>
+                  <audio class="aud"
+                      controls
+                      src="../media/Epic beat.mp3">
+                          Your browser does not support the
+                          <code>audio</code> element.
+                  </audio>
+                </figure>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div id="about-contact" class="about-contact hidden">
+          <!-- START our team -->
+          <div class="teamdiv">
+            <div>
+              <img id="teamimg" src="img/theteam.png" alt="">
+            </div>
+
+
+            <!-- START the 3 cards -->
+            <div class="cardcontainer">
+
+              <!-- CARD 1 -->
+              <div class="thecard">
+                <div class="thefront"> <img src="img/pf1.png" alt="" width="240" height="240"><h2>John Smith</h2></div>
+                <div class="theback"><h2>Back of Card</h2><p>Some text about this card and a button that could be used to send a maybe a mail.</p>
+                <button>Submit</button></div>
+              </div>
+
+              <!-- CARD 1 -->
+              <div class="thecard">
+                <div class="thefront"><img src="img/pf2.png" alt="" width="240" height="240"><h2>John Smith</h2></div>
+                <div class="theback"><h1>Back of Card</h1><p>Some text about this card and a button that could be used to send a maybe a mail.</p>
+                <button>Submit</button></div>
+              </div>
+
+              <!-- CARD 3 -->
+              <div class="thecard">
+                <div class="thefront"><img src="img/pf3.png" alt="" width="240" height="240"><h2>John Smith</h2></div>
+                <div class="theback"><h1>Back of Card</h1><p>Some text about this card and a button that could be used to send a maybe a mail.</p>
+                <button>Submit</button></div>
+              </div>
+
+            </div>
+            <!-- END the 3 card -->
+
+
+          </div>
+          <!-- END our team -->
+
+
+
+          <!-- START based in bergen -->
+          <div class="aboutdiv">
+            <div class="test">
+              <img id="aboutimg" src="img/ourhome.png" alt="">
+            </div>
+            <div class="test">
+              <p id="abouttext">
+                BASED IN BERGEN, Norway, we find our inspiration form the mountains and fjords around us. Our love for music and design brought us together but its the fjords and mountains that inspire us.
+                <br>
+                With its growing music and IT cummunity we find Bergen to be the perfect place for us to meet new people that share our love for the arts.
+              </p>
+            </div>
+          </div>
+          <!-- END based in bergen -->
+
+
+
+          <!-- START contact us -->
+          <div class="contactdiv">
+            <div>
+              <img <img id="contactimg"src="img/together.png" alt="">
+            </div>
+            <div>
+              <p id="abouttext">
+                Want to learn more about us? Meet us? Or maybe interested in joining our team?
+              </p>
+            </div>
+            <div>
+              <button class="together-btn btn-1">Contact Us</button>
+              <button class="together-btn btn-2">Our Newsletter</button>
+            </div>
+          </div>
+          <!-- END contact us -->
+
+        </div>
+
+
+
+      </div>
+
+          <div id="footer">
+            <ul class="about">
+              <li><b>About us</b></li>
+              <li><a href="mailto:Tallisen@live.com">About</a></li>
+              <li><a href="https://www.link.com">Blog</a></li>
+              <li><a href="https://www.link.com">Terms of Service</a></li>
+            </ul>
+              <ul class="socialmedia">
+                <li><b>Social Media</b></li>
+                <li><a href="https://www.link.com">Facebook</a></li>
+                <li><a href="https://www.link.com">Instagram</a></li>
+                <li><a href="https://www.link.com">Twitter</a></li>
+              </ul>
+               <ul class="contact">
+                <li><b>Contact</b></li>
+                <li><a href="https://www.link.com">E-Mail</a></li>
+                <li><a href="https://www.link.com">Telephone</a></li>
+                <li><a href="https://www.link.com">Fax</a></li>
+              </ul>
+          </div>
+       </div>
+     <script type="text/javascript" src="script/headshoulderskneesandtoes.js"></script>
+     <script type="text/javascript" src="script/media.js"></script>
+  </body>
+</html>

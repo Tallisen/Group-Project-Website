@@ -1,0 +1,149 @@
+.home-page{
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.sample-page{
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    transition: all 5s;
+}
+
+.hidden {
+    display: none;
+    opacity:0;
+}
+
+.show {
+    display: block;
+    opacity:1;
+}
+
+.sample-grid{
+    display: grid;
+    grid-auto-columns: 3;
+    grid-template-columns: auto auto auto;
+}
+
+#form{
+  justify-content: center;
+  align-items:center;
+}
+#ulBtn{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sample-container{
+    display: grid;
+    text-align: center;
+}
+
+.input-style{
+    text-align: center;
+}
+
+#previewImg{
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    display: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-items: center;
+}
+
+#previewAud{
+    display: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.upload{
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    color: white;
+}
+
+.hide{
+    display: none;
+}
+
+.title-cover{
+    text-align: center;
+}
+
+h2 span{
+    padding: 6px;
+    color:white;
+    border-radius: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.align{
+    padding-top: 18px;
+}
+
+.coverimg{
+    text-align: center;
+    width: 250px;
+    height: 250px;
+}
+
+.aud{
+    text-align: center;
+}
+
+
+
+.btn {
+    border-radius: 15%;
+    background:linear-gradient(to top, #6A8D9F 0%, #CBD1DF 29%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    margin: auto;
+}
+
+.button{
+    border-style:none;
+    background:linear-gradient(to top, #6A8D9F 0%, #CBD1DF 29%);
+    margin: auto;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 15%;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.button:hover{
+    background:linear-gradient(to top, #6A8D9F 100%, #CBD1DF 50%);
+}
+
+.button:active{
+    background:linear-gradient(to top, #6A8D9F 0%, #CBD1DF 29%);
+}
+
+.ulBtn:hover{
+    background:linear-gradient(to top, #6A8D9F 100%, #CBD1DF 50%);
+}
+
+.ulBtn:active{
+    background:linear-gradient(to top, #6A8D9F 0%, #CBD1DF 29%);
+}
+
+.btn:hover{
+    background:linear-gradient(to top, #6A8D9F 100%, #CBD1DF 50%);
+}
+
+.btn:active{
+    background:linear-gradient(to top, #6A8D9F 0%, #CBD1DF 29%);
+}

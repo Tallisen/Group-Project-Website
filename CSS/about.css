@@ -1,0 +1,257 @@
+/* START 3 main container divs for the about page */
+.teamdiv {
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+
+}
+.aboutdiv {
+  float:left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  width:45%;
+  color:white;
+}
+.contactdiv {
+  float:right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  width:45%;
+  color:white;
+}
+/* END 3 main container divs for the about page */
+
+
+
+/* START 3 images, the team, our home and together "header" images */
+#teamimg {
+display: block;
+width: 260px;
+height: 260px;
+margin-bottom: 10px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#aboutimg {
+float:left;
+display: flex;
+width: 260px;
+height: 260px;
+margin-right: 20%;
+}
+
+#contactimg {
+float:right;
+display: flex;
+width: 260px;
+height: 260px;
+margin-left: 20%;
+}
+/* END 3 images, the team, our home and together "header" images */
+
+/* START paragrafs positioning */
+#abouttext {
+    text-shadow: 0.5px 0.5px black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+    width: 50em;
+    text-align: center;
+}
+/* END paragrafs positioning */
+
+
+/* START Buttons together div*/
+.together-btn {
+    position: relative;
+    display: inline-block;
+    margin: 25px;
+    outline: none;
+    width: 200px;
+    height: 40px;
+    padding: 10px 25px;
+    border: 2px solid #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+/* contact us button */
+/* renamed so it did not share name with other buttons in the css */
+.btn-1 {
+  background: #c31c3a;  /* red */
+  color: #FFFFFF;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-1:hover {
+  background: transparent;
+  color: #000000;
+   box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+}
+.btn-1:before,
+.btn-1:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #c31c3a;  /*  red */
+  transition:400ms ease all;
+}
+.btn-1:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn-1:hover:before,
+.btn-1:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+/* our newsletter button */
+/* renamed so it did not share name with other buttons in the css */
+.btn-2 {
+  background: #008CBA;  /* blue */
+  color: #fff;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-2:hover {
+  background: transparent;
+  color: #000;
+   box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+}
+.btn-2:before,
+.btn-2:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #008CBA;  /* blue */
+  transition:400ms ease all;
+}
+.btn-2:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn-2:hover:before,
+.btn-2:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+/* END Buttons together div*/
+
+
+
+
+/* START Flip card stuff */
+/* The maincontainer holds everything */
+.cardcontainer{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  margin-top: 200px;
+  width: 750px;
+  height: 300px;
+  background: none;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  perspective: 600px;
+
+}
+
+/* The card holds the front and back faces */
+.thecard{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100%;
+  border-radius: 10px;
+  margin: 5px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+/* The psuedo class controls the flip on mouseover and mouseout */
+.thecard:hover{
+  transform: rotateY(180deg);
+}
+
+/* The front face of the card, which shows by default */
+ .thefront{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  border:1px solid black;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #000000;
+  color: #c0c0c0;
+}
+
+/* The back face of the card, which shows on mouseover */
+.theback{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  border:1px solid black;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #072a35;
+  color: white;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+.thefront h2, .theback h1{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.thefront p, .theback p{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
+}
+/*This block (ends here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+/*END flip card stuff */
